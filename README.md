@@ -4,7 +4,7 @@
 node ./src/index.js
 ```
 
-**...and wait few minutes**
+**...and wait a minute**
 
 ## Report examples
 
