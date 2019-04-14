@@ -4,7 +4,8 @@
   "version": "0.1.0",
   "main": "index.js",
   "scripts": {
-    "eslint": "eslint --cache src"
+    "eslint": "eslint --cache src",
+    "start": "node ./src/index.js"
   },
   "dependencies": {
     "estimo": "git+https://github.com/mbalabash/estimo.git",

@@ -1,7 +1,7 @@
 ## Launch
 
 ```js
-node ./src/index.js
+yarn start
 ```
 
 **...and wait a minute**
