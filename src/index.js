@@ -1,10 +1,6 @@
-/* eslint-disable no-restricted-syntax */
-/* eslint-disable no-await-in-loop */
 const path = require('path')
 const estimo = require('estimo')
-const {
-  getFileSize, median, delay, randInt, writeJson,
-} = require('./utils')
+const { getFileSize, median, writeJson } = require('./utils')
 
 const libs = [
   path.resolve(path.join(__dirname, '..', 'libs', 'angular.1.7.8.min.js')),
@@ -30,7 +26,6 @@ const makeExperiment = async (perfCliArgs) => {
     estimations[key] = { size: `${getFileSize(lib).toFixed(2)}kB`, average: -1 }
 
     for (let i = 0; i < countOfExperiments; i += 1) {
-      await delay(randInt(25, 200))
       const { javaScript } = await estimo(lib, perfCliArgs)
       metrics.push(parseInt(javaScript, 10))
     }

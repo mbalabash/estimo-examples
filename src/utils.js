@@ -19,10 +19,6 @@ const median = (array) => {
   return (sortedArray[low] + sortedArray[hight]) / 2
 }
 
-const randInt = (min, max) => Math.floor(Math.random() * max) + min
-
-const delay = async time => new Promise(resolve => setTimeout(resolve, time))
-
 const writeJson = (fileName, content) => {
   jsonfile.writeFileSync(fileName, content, { spaces: 2 })
 }
@@ -30,7 +26,5 @@ const writeJson = (fileName, content) => {
 module.exports = {
   getFileSize,
   writeJson,
-  randInt,
   median,
-  delay,
 }
