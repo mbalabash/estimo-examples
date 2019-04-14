@@ -1,6 +1,6 @@
 {
   "name": "estimo-examples",
-  "description": "",
+  "description": "Some tests and examples of estimo usage",
   "version": "0.1.0",
   "main": "index.js",
   "scripts": {

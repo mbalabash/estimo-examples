@@ -1,10 +1,12 @@
+const path = require('path')
 const estimo = require('estimo')
 
 const libs = [
-  'https://cdnjs.cloudflare.com/ajax/libs/react/16.8.6/umd/react.production.min.js',
-  'https://momentjs.com/downloads/moment.min.js',
-  'https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js',
-  'https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.1/redux.min.js',
+  path.resolve(path.join(__dirname, '..', 'libs', 'angular.1.7.8.min.js')),
+  path.resolve(path.join(__dirname, '..', 'libs', 'moment.min.js')),
+  path.resolve(path.join(__dirname, '..', 'libs', 'react.16.8.6.production.min.js')),
+  path.resolve(path.join(__dirname, '..', 'libs', 'redux.4.0.1.min.js')),
+  path.resolve(path.join(__dirname, '..', 'libs', 'jquery-3.4.0.min.js')),
 ]
 
 ;(async () => {
