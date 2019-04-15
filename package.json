@@ -12,7 +12,7 @@
     "start:libs-10_5-cpu": "node ./src/examples/libs-10_5-cpu.js"
   },
   "dependencies": {
-    "estimo": "git+https://github.com/mbalabash/estimo.git",
+    "estimo": "^0.1.4",
     "jsonfile": "^5.0.0"
   },
   "devDependencies": {
