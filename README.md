@@ -2,7 +2,7 @@
 
 **Basic**:
 
-```js
+```sh
 yarn start:basic
 ```
 
@@ -29,7 +29,7 @@ Will run estimo 5 times for one lib without any [perf-timeline-cli](https://gith
 
 It can takes some time.
 
-```js
+```sh
 yarn start:basic-50
 ```
 
@@ -37,7 +37,7 @@ yarn start:basic-50
 
 **Basic + cpu throttling rate 4**
 
-```js
+```sh
 yarn start:basic-cpu
 ```
 
@@ -49,7 +49,7 @@ Will run estimo 5 times for 10 minified libs ([from here](./libs/.gitkeep)) with
 
 It can takes some time.
 
-```js
+```sh
 yarn start:libs-10_5
 ```
 
@@ -57,6 +57,6 @@ yarn start:libs-10_5
 
 **10 minified libs, 5 times + cpu throttling rate 4**
 
-```js
+```sh
 yarn start:libs-10_5-cpu
 ```
