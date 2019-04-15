@@ -36,7 +36,7 @@ const makeExperiment = async (perfCliArgs) => {
 
     estimations[key].compileTimeMetrics = metrics
     estimations[key].medianCompileTime = `${median(metrics)}ms`
-    estimations[key].medianDuration = `${median(time)}ms`
+    estimations[key].medianDuration = `${median(time)}s`
   }
 
   return estimations
