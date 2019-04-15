@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "eslint": "eslint --cache src",
-    "start": "node ./src/index.js"
+    "start:basic": "node ./src/examples/basic.js",
+    "start:basic-cpu": "node ./src/examples/basic-cpu.js",
+    "start:basic-50": "node ./src/examples/basic-50.js",
+    "start:libs-10_5": "node ./src/examples/libs-10_5.js",
+    "start:libs-10_5-cpu": "node ./src/examples/libs-10_5-cpu.js"
   },
   "dependencies": {
     "estimo": "git+https://github.com/mbalabash/estimo.git",

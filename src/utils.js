@@ -16,7 +16,7 @@ const median = (array) => {
   }
   const low = mid - 1
   const hight = mid
-  return (sortedArray[low] + sortedArray[hight]) / 2
+  return ((parseFloat(sortedArray[low]) + parseFloat(sortedArray[hight])) / 2).toFixed(2)
 }
 
 const writeJson = (fileName, content) => {
