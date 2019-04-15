@@ -15,22 +15,28 @@ const libs = [
   path.resolve(path.join(__dirname, '..', 'libs', 'clipboard.2.0.4.min.js')),
 ]
 
-const countOfExperiments = 5
+const countOfExperiments = 3
 
 const makeExperiment = async (perfCliArgs) => {
   const estimations = {}
 
   for (const lib of libs) {
     const metrics = []
+    const time = []
     const key = path.basename(lib)
-    estimations[key] = { size: `${getFileSize(lib).toFixed(2)}kB`, average: -1 }
+    estimations[key] = { size: `${getFileSize(lib).toFixed(2)}kB`, medianCompileTime: -1 }
 
     for (let i = 0; i < countOfExperiments; i += 1) {
+      const start = Date.now()
       const { javaScript } = await estimo(lib, perfCliArgs)
+      const finish = Date.now()
+      time.push((finish - start) / 1000)
       metrics.push(parseInt(javaScript, 10))
     }
 
-    estimations[key].average = `${median(metrics)}ms`
+    estimations[key].compileTimeMetrics = metrics
+    estimations[key].medianCompileTime = `${median(metrics)}ms`
+    estimations[key].medianDuration = `${median(time)}ms`
   }
 
   return estimations
