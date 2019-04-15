@@ -45,7 +45,7 @@ yarn start:basic-cpu
 
 **10 minified libs, 5 times**
 
-Will run estimo 5 times for 10 minified libs ([from here](./libs/.gitkeep)) without any [perf-timeline-cli](https://github.com/CondeNast/perf-timeline-cli) options.
+Will run estimo 5 times for 10 minified libs ([from here](./libs)) without any [perf-timeline-cli](https://github.com/CondeNast/perf-timeline-cli) options.
 
 It can takes some time.
 
@@ -56,6 +56,8 @@ yarn start:libs-10_5
 ##
 
 **10 minified libs, 5 times + cpu throttling rate 4**
+
+It can takes some time.
 
 ```sh
 yarn start:libs-10_5-cpu
