@@ -1,3 +1,5 @@
+**Each test runs Estimo like new process by** `child_process.spawn`.
+
 ## Examples
 
 **Basic**:
