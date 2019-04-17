@@ -407,21 +407,21 @@ cosmiconfig@^5.0.2, cosmiconfig@^5.0.7:
     js-yaml "^3.13.0"
     parse-json "^4.0.0"
 
-cross-spawn@^5.0.1:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-5.1.0.tgz#e8bd0efee58fcff6f8f94510a0a554bbfa235449"
-  dependencies:
-    lru-cache "^4.0.1"
-    shebang-command "^1.2.0"
-    which "^1.2.9"
-
-cross-spawn@^6.0.0, cross-spawn@^6.0.5:
+cross-spawn@6.0.5, cross-spawn@^6.0.0, cross-spawn@^6.0.5:
   version "6.0.5"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-6.0.5.tgz#4a5ec7c64dfae22c3a14124dbacdee846d80cbc4"
   dependencies:
     nice-try "^1.0.4"
     path-key "^2.0.1"
     semver "^5.5.0"
+    shebang-command "^1.2.0"
+    which "^1.2.9"
+
+cross-spawn@^5.0.1:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-5.1.0.tgz#e8bd0efee58fcff6f8f94510a0a554bbfa235449"
+  dependencies:
+    lru-cache "^4.0.1"
     shebang-command "^1.2.0"
     which "^1.2.9"
 
@@ -504,6 +504,11 @@ del@^3.0.0:
     p-map "^1.1.1"
     pify "^3.0.0"
     rimraf "^2.2.8"
+
+delay@4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/delay/-/delay-4.0.1.tgz#052120e49bc3617a92e9a6cd9556be2cf23397a0"
+  integrity sha512-wOsrzqdl8Lphi0v3g4FPz7zf0sT4o/u+z+LB+s1q0qzB9xw6QzZbdY9D6IoCojRHIxbaHvpUkLt6//1KB6VNug==
 
 doctrine@1.5.0:
   version "1.5.0"
@@ -1671,6 +1676,15 @@ nice-try@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
 
+node-npx@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/node-npx/-/node-npx-1.3.1.tgz#1c37a7a959bad089b4d3fa218cada1f18f156f50"
+  integrity sha512-14sshQJYgSXS9wPSO3GqmUPtql/qUEoiRlHKYTJ9yVIkrl5L/n49SgZ6aSrULkMnsvV3lfyhnJV9YR5cqTO34A==
+  dependencies:
+    cross-spawn "6.0.5"
+    delay "4.0.1"
+    resolve-as-bin "1.3.0"
+
 normalize-package-data@^2.3.2:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/normalize-package-data/-/normalize-package-data-2.5.0.tgz#e66db1838b200c1dfc233225d12cb36520e234a8"
@@ -2061,6 +2075,13 @@ require-main-filename@^1.0.1:
 require-main-filename@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/require-main-filename/-/require-main-filename-2.0.0.tgz#d0b329ecc7cc0f61649f62215be69af54aa8989b"
+
+resolve-as-bin@1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/resolve-as-bin/-/resolve-as-bin-1.3.0.tgz#b967bfbc995906db849d3f71198913af1d2a1a0c"
+  integrity sha512-INEBe/Z6tcRD0iA+DXHmwSgyLa2R1iFBNXxf4IAhqbyKZaLBsWpyHoXppo3jNwnx0dxxR+zQ1RKkGorLvdPvNA==
+  dependencies:
+    cross-spawn "6.0.5"
 
 resolve-from@^3.0.0:
   version "3.0.0"
