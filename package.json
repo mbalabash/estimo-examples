@@ -4,17 +4,10 @@
   "version": "0.1.0",
   "main": "index.js",
   "scripts": {
-    "eslint": "eslint --cache src",
-    "start:basic": "node ./src/examples/basic.js",
-    "start:basic-cpu": "node ./src/examples/basic-cpu.js",
-    "start:basic-50": "node ./src/examples/basic-50.js",
-    "start:libs-10_5": "node ./src/examples/libs-10_5.js",
-    "start:libs-10_5-cpu": "node ./src/examples/libs-10_5-cpu.js"
+    "eslint": "eslint --cache src"
   },
   "dependencies": {
-    "estimo": "^0.1.4",
-    "jsonfile": "^5.0.0",
-    "node-npx": "^1.3.1"
+    "estimo": "^0.1.4"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
@@ -43,10 +36,13 @@
     "url": "https://github.com/mbalabash/estimo-examples/issues"
   },
   "keywords": [
-    "estimo",
-    "bigrig",
     "chrome",
-    "performance"
+    "tracium",
+    "puppeteer",
+    "devtools",
+    "size-limit",
+    "performance",
+    "js"
   ],
   "author": "mbalabash <maksim.balabash@gmail.com>",
   "license": "MIT"
